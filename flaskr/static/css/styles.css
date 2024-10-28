@@ -1,0 +1,189 @@
+/* body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FFF8E0;
+}
+
+/* header */
+.navbar {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    background-color: #FD923F;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar img {
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.navbar nav ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+/* main-section*/
+.main-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.main-section h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: inline-block; 
+    position: relative; 
+}
+.main-section h1::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* 下線を中央に配置 */
+    bottom: -5px; 
+    width: 210%; /* h1タグの長さの210%の下線 */
+    border-bottom: 4px double #79CCF6; 
+    transform: translateX(-50%); /* 下線を中央揃えにする */
+}
+
+.main-section p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.start-button {
+    font-size: 15px;
+    padding: 10px 15px;
+    background-color: #0F6EF1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* cards-section */
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #FCEBDB;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.img-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-wrapper img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.null {
+    height: 600px;
+}
+
+/* footer */
+.fixed-image {
+    position: fixed; 
+    bottom: 0; 
+    right: 0;    
+    width: 20%; 
+    height: auto; 
+    z-index: 1000;  
+    opacity: 0.5;
+}
+
+
+/* bmi.htmlはここから */
+.bmi-main h1 {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+container {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/* 
+headerの微修正をしようとしたが一旦stay
+
+.bmi-header {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    background-color: #FD923F;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.bmi-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bmi-header img {
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    
+}
+
+.bmi-header nav ul {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    height: 25px; 
+}
+
+.bmi-header nav ul li {
+    list-style: none;
+    cursor: pointer;
+    
+}
+ */
