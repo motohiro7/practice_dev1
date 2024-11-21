@@ -8,13 +8,13 @@
 <body>
     <header>
         <div class="navbar">
-            <img src="{{ url_for('static', filename='images/licon_logo.png') }}" alt="comany-logo">
-            <div class="logo">ホーム</div>
+            <img src="{{ url_for('static', filename='images/licon_logo.png') }}" alt="company-logo">
+            <div class="logo"><a href="{{ url_for('hello') }}">ホーム</a></div>
             <nav>
                 <ul>
-                    <li>従業員管理</li>
-                    <li>従業員登録</li>
-                    <li>BMI診断</li>
+                    <li><a href="{{ url_for('manage_employee') }}">従業員管理</a></li>
+                    <li><a href="{{ url_for('register_employee') }}">従業員登録</a></li>
+                    <li><a href="{{ url_for('bmi') }}">BMI診断</a></li>
                 </ul>
             </nav>
         </div>
